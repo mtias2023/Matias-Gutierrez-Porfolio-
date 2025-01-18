@@ -28,62 +28,64 @@
 
 <body class="bg-gray-900 text-gray-100">
    
-    <header class="bg-gray-800 fixed w-full z-50 shadow">
-        <nav class="container mx-auto flex justify-between items-center py-2">
-            <!-- Logo -->
-            <img src="assets/images/g-removebg-preview.png" alt="Logo" class="w-32 h-28 object-contain">
-    
-            <!-- Botón de menú hamburguesa-->
-            <button id="menu-btn" class="block md:hidden text-gray-300 focus:outline-none mx-10">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-              </button>
-              
-    
-            <!-- Menú de navegación -->
-            <ul id="menu" class="hidden md:flex flex-col md:flex-row md:space-x-3 items-center bg-gray-800 md:bg-transparent absolute md:static top-16 left-0 w-full md:w-auto">
-                <li>
-                    <a id="inicio" href="#home" class="nav-link block py-1 px-3 text-gray-300 hover:text-blue-400">
-                        Inicio
-                    </a>
-                </li>
-                <li>
-                    <a id="sobre_mi" href="#about" class="nav-link block py-1 px-3 text-gray-300 hover:text-blue-400">
-                        Sobre mí
-                    </a>
-                </li>
-                <li>
-                    <a id="habilidades" href="#ability" class="nav-link block py-1 px-3 text-gray-300 hover:text-blue-400">
-                        Habilidades
-                    </a>
-                </li>
-                <li>
-                    <a id="formacion" href="#education" class="nav-link block py-1 px-3 text-gray-300 hover:text-blue-400">
-                        Formación
-                    </a>
-                </li>
-                <li>
-                    <a id="proyectos" href="#projects" class="nav-link block py-1 px-3 text-gray-300 hover:text-blue-400">
-                        Proyectos
-                    </a>
-                </li>
-                <li>
-                    <a id="contacto" href="#contact" class="nav-link block py-1 px-3 text-gray-300 hover:text-blue-400">
-                        Contacto
-                    </a>
-                </li>
-                <li class="flex space-x-2 py-1 px-3">
-                    <!-- Iconos para cambiar idioma -->
-                    <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/es.svg" alt="Español" 
-                         class="w-8 h-8 rounded-full cursor-pointer" onclick="changeLanguage('es')">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="Inglés" 
-                         class="w-8 h-8 rounded-full cursor-pointer" onclick="changeLanguage('en')">
-                </li>
-            </ul>
-        </nav>
-    </header>
-    
+  <header class="bg-gray-800 fixed w-full z-50 shadow">
+    <nav class="container mx-auto flex justify-between items-center py-2 relative">
+        <!-- Logo -->
+        <img src="assets/images/g-removebg-preview.png" alt="Logo" class="w-32 h-28 object-contain">
+
+        <!-- Botón de menú hamburguesa -->
+        <button id="menu-btn" class="block md:hidden text-gray-300 focus:outline-none mx-10">
+            <svg xmlns="http://www.w3.org/2000/svg" id="menu-icon" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" id="close-icon" class="h-12 w-12 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+
+        <!-- Menú de navegación -->
+        <ul id="menu" class="hidden md:flex flex-col md:flex-row md:space-x-3 items-center bg-gray-800 md:bg-transparent absolute md:static top-28 left-0 w-full md:w-auto">
+            <li>
+                <a id="inicio" href="#home" class="nav-link block py-1 px-3 text-gray-300 hover:text-blue-400">
+                    Inicio
+                </a>
+            </li>
+            <li>
+                <a id="sobre_mi" href="#about" class="nav-link block py-1 px-3 text-gray-300 hover:text-blue-400">
+                    Sobre mí
+                </a>
+            </li>
+            <li>
+                <a id="habilidades" href="#ability" class="nav-link block py-1 px-3 text-gray-300 hover:text-blue-400">
+                    Habilidades
+                </a>
+            </li>
+            <li>
+                <a id="formacion" href="#education" class="nav-link block py-1 px-3 text-gray-300 hover:text-blue-400">
+                    Formación
+                </a>
+            </li>
+            <li>
+                <a id="proyectos" href="#projects" class="nav-link block py-1 px-3 text-gray-300 hover:text-blue-400">
+                    Proyectos
+                </a>
+            </li>
+            <li>
+                <a id="contacto" href="#contact" class="nav-link block py-1 px-3 text-gray-300 hover:text-blue-400">
+                    Contacto
+                </a>
+            </li>
+            <li class="flex space-x-2 py-1 px-3">
+                <!-- Iconos para cambiar idioma -->
+                <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/es.svg" alt="Español" 
+                     class="w-8 h-8 rounded-full cursor-pointer" onclick="changeLanguage('es')">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="Inglés" 
+                     class="w-8 h-8 rounded-full cursor-pointer" onclick="changeLanguage('en')">
+            </li>
+        </ul>
+    </nav>
+</header>
+
     <!-- Hero Section -->
     <section 
     id="home" 
@@ -92,7 +94,7 @@
     <!-- Imagen -->
     <div class="order-1 lg:order-2 w-full lg:w-1/2 flex justify-center mt-16 lg:mt-0 mb-4 lg:mb-0">
         <img 
-            src="assets/images/yo.png" 
+            src="assets/images/yoo.png" 
             alt="Matías" 
             class=" w-fullmax-w-[500px] lg:max-w-[500px] rounded-full object-cover shadow-lg"
         >
@@ -125,35 +127,36 @@
 </div>
  
 <!-- Redes sociales -->
-<div class="absolute bottom-6 left-0 flex gap-4 ml-6 lg:ml-12 items-center lg:flex-col lg:items-start mt-4 lg:mt-0">
-    <!-- GitHub -->
-    <a href="https://github.com/tuusuario" target="_blank" class="text-gray-400 hover:text-blue-400 transition">
-      <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M12 .297C5.373.297 0 5.67 0 12.297c0 5.292 3.438 9.8 8.205 11.387.6.111.82-.26.82-.577v-2.022c-3.338.726-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.755-1.333-1.755-1.089-.744.083-.729.083-.729 1.204.084 1.838 1.237 1.838 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.774.417-1.304.762-1.604-2.665-.304-5.466-1.332-5.466-5.93 0-1.31.468-2.38 1.236-3.22-.124-.304-.536-1.528.116-3.18 0 0 1.008-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.292-1.552 3.3-1.23 3.3-1.23.652 1.652.24 2.876.118 3.18.77.84 1.236 1.91 1.236 3.22 0 4.61-2.803 5.624-5.472 5.922.429.37.81 1.096.81 2.208v3.28c0 .32.21.694.825.576 4.765-1.589 8.2-6.096 8.2-11.385C24 5.67 18.627.297 12 .297z"/>
-      </svg>
-    </a>
-  
-    <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/in/tuusuario" target="_blank" class="text-gray-400 hover:text-blue-400 transition">
-      <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.232c-.966 0-1.768-.802-1.768-1.768s.802-1.768 1.768-1.768 1.768.802 1.768 1.768-.802 1.768-1.768 1.768zm13.5 11.232h-3v-5.604c0-1.339-.031-3.064-1.866-3.064-1.867 0-2.154 1.459-2.154 2.965v5.703h-3v-10h2.885v1.367h.041c.402-.76 1.384-1.563 2.849-1.563 3.046 0 3.609 2.005 3.609 4.614v5.582z"/>
-      </svg>
-    </a>
-  
-    <!-- Instagram -->
-    <a href="https://instagram.com/tuusuario" target="_blank" class="text-gray-400 hover:text-blue-400 transition">
-      <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.97.24 2.43.405a4.92 4.92 0 011.675 1.08 4.92 4.92 0 011.08 1.675c.165.46.351 1.26.405 2.43.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.405 2.43a4.92 4.92 0 01-1.08 1.675 4.92 4.92 0 01-1.675 1.08c-.46.165-1.26.351-2.43.405-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.97-.24-2.43-.405a4.92 4.92 0 01-1.675-1.08 4.92 4.92 0 01-1.08-1.675c-.165-.46-.351-1.26-.405-2.43-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.054-1.17.24-1.97.405-2.43a4.92 4.92 0 011.08-1.675 4.92 4.92 0 011.675-1.08c.46-.165 1.26-.351 2.43-.405 1.266-.058 1.646-.07 4.85-.07zm0-2.163C8.756 0 8.331.014 7.053.072 5.777.13 4.596.304 3.545.743a7.223 7.223 0 00-2.7 1.757A7.223 7.223 0 00.088 5.2c-.439 1.051-.613 2.232-.671 3.508C-.007 9.878 0 10.296 0 12c0 1.704-.007 2.122.072 3.8.058 1.276.232 2.457.671 3.508.439 1.051 1.055 1.913 1.757 2.7a7.223 7.223 0 002.7 1.757c1.051.439 2.232.613 3.508.671C8.331 23.986 8.756 24 12 24c3.244 0 3.669-.014 4.947-.072 1.276-.058 2.457-.232 3.508-.671a7.223 7.223 0 002.7-1.757 7.223 7.223 0 001.757-2.7c.439-1.051.613-2.232.671-3.508.079-1.678.072-2.096.072-3.8 0-1.704.007-2.122-.072-3.8-.058-1.276-.232-2.457-.671-3.508a7.223 7.223 0 00-1.757-2.7c-1.051-.439-2.232-.613-3.508-.671C15.669.014 15.244 0 12 0zm0 6.162a5.838 5.838 0 100 11.677 5.838 5.838 0 000-11.677zm0 9.678a3.84 3.84 0 110-7.68 3.84 3.84 0 010 7.68zm5.733-7.94a1.4 1.4 0 11-2.8 0 1.4 1.4 0 012.8 0z"/>
-      </svg>
-    </a>
-  
-    <!-- Correo -->
-    <a href="mailto:tuemail@ejemplo.com" target="_blank" class="text-gray-400 hover:text-blue-400 transition">
-      <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M12 13.065l-11.985-7.065h23.97l-11.985 7.065zm-11.985-8.065l11.985 7.065 11.985-7.065h-23.97zm0 1.936v13h23.97v-13l-11.985 7.065-11.985-7.065z"/>
-      </svg>
-    </a>
-  </div>
+<div class="absolute bottom-6 left-0 flex gap-4 ml-6 lg:ml-12 items-center lg:flex-col lg:items-start mt-4 lg:mt-0 hidden lg:flex">
+  <!-- GitHub -->
+  <a href="https://github.com/tuusuario" target="_blank" class="text-gray-400 hover:text-blue-400 transition">
+    <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M12 .297C5.373.297 0 5.67 0 12.297c0 5.292 3.438 9.8 8.205 11.387.6.111.82-.26.82-.577v-2.022c-3.338.726-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.755-1.333-1.755-1.089-.744.083-.729.083-.729 1.204.084 1.838 1.237 1.838 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.774.417-1.304.762-1.604-2.665-.304-5.466-1.332-5.466-5.93 0-1.31.468-2.38 1.236-3.22-.124-.304-.536-1.528.116-3.18 0 0 1.008-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.292-1.552 3.3-1.23 3.3-1.23.652 1.652.24 2.876.118 3.18.77.84 1.236 1.91 1.236 3.22 0 4.61-2.803 5.624-5.472 5.922.429.37.81 1.096.81 2.208v3.28c0 .32.21.694.825.576 4.765-1.589 8.2-6.096 8.2-11.385C24 5.67 18.627.297 12 .297z"/>
+    </svg>
+  </a>
+
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/tuusuario" target="_blank" class="text-gray-400 hover:text-blue-400 transition">
+    <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.232c-.966 0-1.768-.802-1.768-1.768s.802-1.768 1.768-1.768 1.768.802 1.768 1.768-.802 1.768-1.768 1.768zm13.5 11.232h-3v-5.604c0-1.339-.031-3.064-1.866-3.064-1.867 0-2.154 1.459-2.154 2.965v5.703h-3v-10h2.885v1.367h.041c.402-.76 1.384-1.563 2.849-1.563 3.046 0 3.609 2.005 3.609 4.614v5.582z"/>
+    </svg>
+  </a>
+
+  <!-- Instagram -->
+  <a href="https://instagram.com/tuusuario" target="_blank" class="text-gray-400 hover:text-blue-400 transition">
+    <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.97.24 2.43.405a4.92 4.92 0 011.675 1.08 4.92 4.92 0 011.08 1.675c.165.46.351 1.26.405 2.43.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.405 2.43a4.92 4.92 0 01-1.08 1.675 4.92 4.92 0 01-1.675 1.08c-.46.165-1.26.351-2.43.405-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.97-.24-2.43-.405a4.92 4.92 0 01-1.675-1.08 4.92 4.92 0 01-1.08-1.675c-.165-.46-.351-1.26-.405-2.43-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.054-1.17.24-1.97.405-2.43a4.92 4.92 0 011.08-1.675 4.92 4.92 0 011.675-1.08c.46-.165 1.26-.351 2.43-.405 1.266-.058 1.646-.07 4.85-.07zm0-2.163C8.756 0 8.331.014 7.053.072 5.777.13 4.596.304 3.545.743a7.223 7.223 0 00-2.7 1.757A7.223 7.223 0 00.088 5.2c-.439 1.051-.613 2.232-.671 3.508C-.007 9.878 0 10.296 0 12c0 1.704-.007 2.122.072 3.8.058 1.276.232 2.457.671 3.508.439 1.051 1.055 1.913 1.757 2.7a7.223 7.223 0 002.7 1.757c1.051.439 2.232.613 3.508.671C8.331 23.986 8.756 24 12 24c3.244 0 3.669-.014 4.947-.072 1.276-.058 2.457-.232 3.508-.671a7.223 7.223 0 002.7-1.757 7.223 7.223 0 001.757-2.7c.439-1.051.613-2.232.671-3.508.079-1.678.072-2.096.072-3.8 0-1.704.007-2.122-.072-3.8-.058-1.276-.232-2.457-.671-3.508a7.223 7.223 0 00-1.757-2.7c-1.051-.439-2.232-.613-3.508-.671C15.669.014 15.244 0 12 0zm0 6.162a5.838 5.838 0 100 11.677 5.838 5.838 0 000-11.677zm0 9.678a3.84 3.84 0 110-7.68 3.84 3.84 0 010 7.68zm5.733-7.94a1.4 1.4 0 11-2.8 0 1.4 1.4 0 012.8 0z"/>
+    </svg>
+  </a>
+
+  <!-- Correo -->
+  <a href="mailto:tuemail@ejemplo.com" target="_blank" class="text-gray-400 hover:text-blue-400 transition">
+    <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M12 13.065l-11.985-7.065h23.97l-11.985 7.065zm-11.985-8.065l11.985 7.065 11.985-7.065h-23.97zm0 1.936v13h23.97v-13l-11.985 7.065-11.985-7.065z"/>
+    </svg>
+  </a>
+</div>
+
   
 
     </section>
