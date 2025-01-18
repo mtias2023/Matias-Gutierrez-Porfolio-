@@ -1,0 +1,22 @@
+{
+    "name": "Matías Gutiérrez - Portafolio",
+    "short_name": "Portafolio",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#1e40af",
+    "description": "Mi portafolio como desarrollador web",
+    "icons": [
+      {
+        "src": "assets/images/logo.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "assets/images/logo.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
