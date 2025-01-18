@@ -1,10 +1,14 @@
-// Mostrar/Ocultar menú hamburguesa
-const menuBtn = document.getElementById('menu-btn');
-const menu = document.getElementById('menu');
+const menuBtn = document.getElementById("menu-btn");
+const menu = document.getElementById("menu");
+const menuIcon = document.getElementById("menu-icon");
+const closeIcon = document.getElementById("close-icon");
 
-menuBtn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
+menuBtn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+    menuIcon.classList.toggle("hidden");
+    closeIcon.classList.toggle("hidden");
 });
+
 
 // Cambiar sesión activa
 const navLinks = document.querySelectorAll('.nav-link');
