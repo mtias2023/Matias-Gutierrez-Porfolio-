@@ -156,9 +156,6 @@
     </svg>
   </a>
 </div>
-
-  
-
     </section>
 
     <!-- About Section -->
@@ -386,27 +383,32 @@
   </section>
   
   
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-800">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-white">Contacto</h2>
-            <form action="#" method="POST" class="mt-10 max-w-lg mx-auto bg-gray-700 shadow-lg rounded-lg p-6">
-                <div class="mb-4">
-                    <label for="name" class="block text-sm font-bold text-gray-300 mb-2">Nombre</label>
-                    <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded bg-gray-800 text-gray-300 focus:outline-none">
-                </div>
-                <div class="mb-4">
-                    <label for="email" class="block text-sm font-bold text-gray-300 mb-2">Correo</label>
-                    <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded bg-gray-800 text-gray-300 focus:outline-none">
-                </div>
-                <div class="mb-4">
-                    <label for="message" class="block text-sm font-bold text-gray-300 mb-2">Mensaje</label>
-                    <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border rounded bg-gray-800 text-gray-300 focus:outline-none"></textarea>
-                </div>
-                <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700 transition">Enviar</button>
-            </form>
+  <section id="contact" class="py-20 bg-gray-800">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-white">Contacto</h2>
+        <form id="contact-form" class="mt-10 max-w-lg mx-auto bg-gray-700 shadow-lg rounded-lg p-6">
+            <div class="mb-4">
+                <label for="name" class="block text-sm font-bold text-gray-300 mb-2">Nombre</label>
+                <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded bg-gray-800 text-gray-300 focus:outline-none" required>
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-bold text-gray-300 mb-2">Correo</label>
+                <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded bg-gray-800 text-gray-300 focus:outline-none" required>
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-sm font-bold text-gray-300 mb-2">Mensaje</label>
+                <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border rounded bg-gray-800 text-gray-300 focus:outline-none" required></textarea>
+            </div>
+            <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700 transition">Enviar</button>
+        </form>
+
+        <!-- Mensaje de éxito -->
+        <div id="success-message" class="mt-4 hidden bg-green-500 text-white py-3 px-6 rounded-lg text-center">
+            ¡Mensaje enviado exitosamente!
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Footer -->
 <footer class="bg-gray-900 text-gray-500 py-8">
@@ -446,6 +448,7 @@
             </a>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="js/scripts.js"></script>
 </footer>
 
