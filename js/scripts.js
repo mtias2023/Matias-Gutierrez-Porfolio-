@@ -66,3 +66,31 @@ function changeLanguage(language) {
     if (saludoElem) saludoElem.textContent = translations[language].saludo;
     if (descripcionElem) descripcionElem.textContent = translations[language].descripcion;
 }
+
+document.querySelector('form').addEventListener('submit', function (e) {
+    e.preventDefault(); // Evita el comportamiento predeterminado del formulario
+
+    emailjs.init("-fPgLiwlyG7cR6jh3"); // Reemplaza con tu User ID de EmailJS
+
+    // Recoge los valores del formulario
+    const serviceID = 'service_ucrxcib'; // Reemplaza con tu Service ID
+    const templateID = 'template_kzja2kh'; // Reemplaza con tu Template ID
+    const params = {
+        name: document.getElementById('name').value, // Debe coincidir con {{name}} en la plantilla
+        email: document.getElementById('email').value, // Debe coincidir con {{email}} en la plantilla
+        message: document.getElementById('message').value, // Debe coincidir con {{message}} en la plantilla
+    };
+
+    // Envía el correo
+    emailjs.send(serviceID, templateID, params)
+        .then(response => {
+            // Muestra el mensaje de éxito
+            const successMessage = document.getElementById('success-message');
+            successMessage.classList.remove('hidden');
+            console.log('SUCCESS!', response.status, response.text);
+        })
+        .catch(error => {
+            alert('Hubo un error al enviar el mensaje. Inténtalo nuevamente.');
+            console.error('FAILED...', error);
+        });
+});
