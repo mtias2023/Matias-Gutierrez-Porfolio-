@@ -51,6 +51,7 @@ function changeLanguage(language) {
             academia2: "Curso de Introdución a la Programación web",
             proyecto: "Proyectos",
             fabo_info: "Es una aplicación web diseñada para facilitar la conexión entre aficionados al deporte. Permite a los usuarios compartir experiencias, organizar y participar en partidos de Fútbol, Básquet, tenis y comunicarse a través de chats públicos y privados. El objetivo principal es fomentar la interacción y la organización deportiva en una comunidad dinámica y accesible. (En desarrollo)",
+            fabo2: "Es una Landing Page de FABO que fue diseñada para promocionar la Progressive Web App (PWA) y fomentar su descarga. Desarrollada con un diseño moderno y responsivo, garantiza una experiencia de usuario fluida en cualquier dispositivo. Implementa estrategias de conversión con llamadas a la acción claras y optimización para SEO, asegurando mayor alcance y visibilidad.",
             buscador: "Buscador de peliculas",
             buscador_info: "CineMax es tu buscador de películas ideal. Con esta aplicación, puedes buscar películas por título, género o explorar las más populares. Además, tienes la opción de guardar tus películas favoritas para acceder a ellas fácilmente en cualquier momento o eliminarlas si cambian tus preferencias. Cada película incluye detalles como sinopsis, fecha de estreno y póster oficial.",
             delicias: "Delicias Express",
@@ -84,6 +85,7 @@ function changeLanguage(language) {
             academia2: "Introduction to Web Programming Course",
             proyecto: "Projects",
             fabo_info: "It's a web application designed to facilitate connection among sports fans. It allows users to share experiences, organize and participate in soccer, basketball, and tennis games, and communicate through public and private chats. The main objective is to foster sports interaction and organization in a dynamic and accessible community. (In development)",
+            fabo2: "This is a FABO landing page designed to promote the Progressive Web App (PWA) and encourage downloads. Developed with a modern, responsive design, it guarantees a seamless user experience on any device. It implements conversion strategies with clear calls to action and SEO optimization, ensuring greater reach and visibility.",
             buscador: "Movie search engine",
             buscador_info: "CineMax is your ideal movie finder. With this app, you can search for movies by title, genre, or browse the most popular ones. You also have the option to save your favorite movies for easy access at any time or delete them if your preferences change. Each movie includes details such as a synopsis, release date, and official poster.",
             delicias: "Express Delights",
@@ -119,6 +121,7 @@ function changeLanguage(language) {
     document.getElementById('academia2').textContent = translations[language].academia2;
     document.getElementById('proyecto').textContent = translations[language].proyecto;
     document.getElementById('fabo_info').textContent = translations[language].fabo_info;
+    document.getElementById('fabo2').textContent = translations[language].fabo2;
     document.getElementById('buscador').textContent = translations[language].buscador;
     document.getElementById('buscador_info').textContent = translations[language].buscador_info;
     document.getElementById('delicias').textContent = translations[language].delicias;
