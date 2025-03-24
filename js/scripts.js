@@ -37,12 +37,12 @@ function changeLanguage(language) {
             proyectos: "Proyectos",
             contacto: "Contacto",
             saludo: "Hola, soy Matias Gutierrez",
-            descripcion: "Desarrollador Web apasionado por crear experiencias digitales únicas.",
-            descripcion_adicional: "Soy estudiante de Tecnicatura en Desarrollo y Programación Web, busco crear proyectos que brinden la mejor experiencia para el usuario.",
+            descripcion: "Desarrollador Full Stack apasionado por crear experiencias digitales únicas.",
             boton_contacto: "Contáctame",
+            boton_descargar_cv: "Descargar CV",
             sobre_mi_titulo: "Sobre mí",
             nombre: "Matias Gutierrez",
-            descripcion_about: "Soy un estudiante apasionado por el desarrollo web, con un enfoque en la creación de soluciones digitales modernas y atractivas. Aunque estoy comenzando mi carrera, tengo experiencia trabajando con tecnologías como HTML, CSS, JavaScript, diversos frameworks, además de contar con conocimientos en backend. Mi objetivo es ayudar a empresas y emprendedores a llevar sus ideas al mundo digital mediante sitios web intuitivos, funcionales y visualmente impactantes. Me considero una persona colaborativa que disfruta trabajar en equipo, aportando ideas y aprendiendo de los demás. Siempre estoy en busca de nuevos desafíos que me permitan seguir aprendiendo y perfeccionando mis habilidades.",
+            descripcion_about: "Soy un desarrollador Full Stack apasionado por la creación de soluciones digitales modernas y atractivas. Cuento con experiencia tanto en frontend como en backend, utilizando tecnologías como HTML, CSS, JavaScript, diversos frameworks, y trabajando con bases de datos. Mi objetivo es ayudar a empresas y emprendedores a llevar sus ideas al mundo digital mediante sitios web intuitivos, funcionales y visualmente impactantes. Me destaco por mi capacidad de trabajo en equipo, aportando ideas y aprendiendo continuamente para seguir perfeccionando mis habilidades. Siempre busco nuevos desafíos que me permitan crecer profesionalmente.",
             mis_habilidades: "Mis Habilidades",
             mi_formacion: "Formación Académica",
             academia: "Tecnicatura en Desarrollo y Programación Web",
@@ -50,7 +50,7 @@ function changeLanguage(language) {
             academia1: "Curso de introducción al desarrollo web: HTML y CSS",
             academia2: "Curso de Introdución a la Programación web",
             proyecto: "Proyectos",
-            fabo_info: "Es una aplicación web diseñada para facilitar la conexión entre aficionados al deporte. Permite a los usuarios compartir experiencias, organizar y participar en partidos de Fútbol, Básquet, tenis y comunicarse a través de chats públicos y privados. El objetivo principal es fomentar la interacción y la organización deportiva en una comunidad dinámica y accesible. (En desarrollo)",
+            fabo_info: "Es una aplicación web diseñada para facilitar la conexión entre aficionados al deporte. Permite a los usuarios compartir experiencias, organizar y participar en partidos de Fútbol, Básquet, tenis y comunicarse a través de chats públicos y privados. El objetivo principal es fomentar la interacción y la organización deportiva en una comunidad dinámica y accesible.",
             fabo2: "Es una Landing Page de FABO que fue diseñada para promocionar la Progressive Web App (PWA) y fomentar su descarga. Desarrollada con un diseño moderno y responsivo, garantiza una experiencia de usuario fluida en cualquier dispositivo. Implementa estrategias de conversión con llamadas a la acción claras y optimización para SEO, asegurando mayor alcance y visibilidad.",
             buscador: "Buscador de peliculas",
             buscador_info: "CineMax es tu buscador de películas ideal. Con esta aplicación, puedes buscar películas por título, género o explorar las más populares. Además, tienes la opción de guardar tus películas favoritas para acceder a ellas fácilmente en cualquier momento o eliminarlas si cambian tus preferencias. Cada película incluye detalles como sinopsis, fecha de estreno y póster oficial.",
@@ -71,12 +71,12 @@ function changeLanguage(language) {
             proyectos: "Projects",
             contacto: "Contact",
             saludo: "Hi, I'm Matias Gutierrez",
-            descripcion: "Web Developer passionate about creating unique digital experiences.",
-            descripcion_adicional: "I am a student of Web Development and Programming Technician, aiming to create projects that offer the best user experience.",
+            descripcion: "Full Stack Developer passionate about creating unique digital experiences.",
             boton_contacto: "Contact Me",
+            boton_descargar_cv: "Download CV",
             sobre_mi_titulo: "About Me",
             nombre: "Matias Gutierrez",
-            descripcion_about: "I am a student passionate about web development, focused on creating modern and attractive digital solutions. Although I'm just starting my career, I have experience working with technologies such as HTML, CSS, JavaScript, various frameworks, and I also have knowledge in backend. My goal is to help companies and entrepreneurs bring their ideas to the digital world through intuitive, functional, and visually impactful websites. I consider myself a collaborative person who enjoys working in teams, contributing ideas, and learning from others. I am always looking for new challenges that allow me to continue learning and perfecting my skills.",
+            descripcion_about: "I am a full-stack developer passionate about creating modern and engaging digital solutions. I have experience in both front- and back-end development, using technologies such as HTML, CSS, JavaScript, various frameworks, and working with databases. My goal is to help companies and entrepreneurs bring their ideas to the digital world through intuitive, functional, and visually stunning websites. I excel at teamwork, contributing ideas, and continually learning to further hone my skills. I'm always looking for new challenges that allow me to grow professionally.",
             mis_habilidades: "My Skills",
             mi_formacion: "Academic Training",
             academia: "Technician in Web Development and Programming",
@@ -84,7 +84,7 @@ function changeLanguage(language) {
             academia1: "Introductory Course to Web Development: HTML and CSS",
             academia2: "Introduction to Web Programming Course",
             proyecto: "Projects",
-            fabo_info: "It's a web application designed to facilitate connection among sports fans. It allows users to share experiences, organize and participate in soccer, basketball, and tennis games, and communicate through public and private chats. The main objective is to foster sports interaction and organization in a dynamic and accessible community. (In development)",
+            fabo_info: "It's a web application designed to facilitate connection among sports fans. It allows users to share experiences, organize and participate in soccer, basketball, and tennis games, and communicate through public and private chats. The main objective is to foster sports interaction and organization in a dynamic and accessible community.",
             fabo2: "This is a FABO landing page designed to promote the Progressive Web App (PWA) and encourage downloads. Developed with a modern, responsive design, it guarantees a seamless user experience on any device. It implements conversion strategies with clear calls to action and SEO optimization, ensuring greater reach and visibility.",
             buscador: "Movie search engine",
             buscador_info: "CineMax is your ideal movie finder. With this app, you can search for movies by title, genre, or browse the most popular ones. You also have the option to save your favorite movies for easy access at any time or delete them if your preferences change. Each movie includes details such as a synopsis, release date, and official poster.",
@@ -108,8 +108,8 @@ function changeLanguage(language) {
     document.getElementById('contacto').textContent = translations[language].contacto;
     document.getElementById('saludo').textContent = translations[language].saludo;
     document.getElementById('descripcion').textContent = translations[language].descripcion;
-    document.getElementById('descripcion_adicional').textContent = translations[language].descripcion_adicional;
     document.getElementById('boton_contacto').textContent = translations[language].boton_contacto;
+    document.getElementById('boton_descargar_cv').textContent = translations[language].boton_descargar_cv;
     document.getElementById('sobre_mi_titulo').textContent = translations[language].sobre_mi_titulo;
     document.getElementById('nombre').textContent = translations[language].nombre;
     document.getElementById('descripcion_about').textContent = translations[language].descripcion_about;
