@@ -6,6 +6,8 @@
     <title>Matias Gutierrez | Desarrollador Web</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo.png">
 
@@ -52,12 +54,17 @@
             </li>
             <li>
                 <a id="sobre_mi" href="#about" class="nav-link block py-1 px-3 text-gray-300 hover:text-blue-400">
-                    Sobre mí
+                    Perfil
                 </a>
             </li>
             <li>
                 <a id="habilidades" href="#ability" class="nav-link block py-1 px-3 text-gray-300 hover:text-blue-400">
                     Habilidades
+                </a>
+            </li>
+            <li>
+                <a id="formacion" href="#services" class="nav-link block py-1 px-3 text-gray-300 hover:text-blue-400">
+                    Servicios
                 </a>
             </li>
             <li>
@@ -75,228 +82,389 @@
                     Contacto
                 </a>
             </li>
-            <li class="flex space-x-2 py-1 px-3">
-                <!-- Iconos para cambiar idioma -->
+            <!-- <li class="flex space-x-2 py-1 px-3">
+                Iconos para cambiar idioma 
                 <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/es.svg" alt="Español" 
                      class="w-8 h-8 rounded-full cursor-pointer" onclick="changeLanguage('es')">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="Inglés" 
                      class="w-8 h-8 rounded-full cursor-pointer" onclick="changeLanguage('en')">
-            </li>
+            </li>-->
         </ul>
     </nav>
 </header>
 
     <!-- Hero Section -->
-    <section 
-    id="home" 
-    class="min-h-screen flex flex-col lg:flex-row items-center justify-between bg-gradient-to-r from-blue-900 to-black text-white px-6 lg:px-60 py-20"
-    >
-    <!-- Imagen -->
-    <div class="order-1 lg:order-2 w-full lg:w-1/2 flex justify-center mt-16 lg:mt-0 mb-4 lg:mb-0">
-        <img 
-            src="assets/images/yoo.png" 
-            alt="Matías" 
-            class=" w-fullmax-w-[500px] lg:max-w-[500px] rounded-full object-cover shadow-lg"
-        >
-    </div>
-
-   <!-- Texto y botón -->
-<div class="order-2 lg:order-1 w-full lg:w-1/2 text-center lg:text-left px-4">
-  <!-- Título -->
-  <h1 id="saludo" class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-100">
-      Hola, soy Matias Gutierrez
+<section 
+  id="home" 
+  class="relative min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-900 to-black text-white px-6 py-32 text-center"
+>
+  <!-- Título principal -->
+  <h1 
+    class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-wide drop-shadow-lg"
+  >
+    Hola, soy <span class="text-blue-500">Matías Gutierrez</span>
   </h1>
 
   <!-- Subtítulo -->
-  <p id="descripcion" class="mt-3 sm:mt-4 text-base sm:text-lg md:text-xl lg:text-xl font-semibold text-gray-300 animate__animated animate__fadeIn" style="animation-duration: 5s;">
-    Desarrollador Full Stack apasionado por crear experiencias digitales únicas.
+  <p 
+    class="mt-6 text-base sm:text-lg md:text-xl lg:text-2xl font-medium text-gray-300 max-w-2xl mx-auto animate__animated animate__fadeIn"
+    style="animation-duration: 3s;"
+  >
+    Desarrollador Web Full Stack apasionado por crear experiencias digitales únicas.
   </p>
 
-  
- <!-- Botón para contáctame -->
-<a 
-id="boton_contacto" 
-href="#contact" 
-class="mt-4 inline-block text-white bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg mr-2"
->
-Contáctame
-</a>
+  <!-- Botones -->
+  <div class="mt-10 flex flex-wrap justify-center gap-6">
+    <!-- Contáctame -->
+    <a 
+      href="#contact" 
+      class="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg shadow-lg transition font-semibold"
+    >
+      Contáctame
+    </a>
 
-<!-- Botón para descargar CV  -->
-<a 
-    id="boton_descargar_cv" 
-    href="https://drive.google.com/uc?export=download&id=1KqKznpqLaZZqzoY3_Q2-BkcFn7dyySir" 
-    download 
-    class="mt-4 inline-block text-white bg-gray-700 hover:bg-gray-800 px-6 py-2 rounded-lg"
->
-    Descargar CV
-</a>
+    <!-- Descargar CV -->
+    <a 
+      href="https://drive.google.com/uc?export=download&id=1KqKznpqLaZZqzoY3_Q2-BkcFn7dyySir" 
+      download 
+      class="px-6 py-3 bg-gray-700 hover:bg-gray-800 rounded-lg shadow-lg transition font-semibold"
+    >
+      Descargar CV
+    </a>
+  </div>
 
-</div>
- 
-<!-- Redes sociales -->
-<div class="absolute bottom-6 left-0 flex gap-4 ml-6 lg:ml-12 items-center lg:flex-col lg:items-start mt-4 lg:mt-0 hidden lg:flex">
-  <!-- GitHub -->
-  <a href="https://github.com/mtias2023" target="_blank" class="text-gray-400 hover:text-blue-400 transition">
-    <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <path d="M12 .297C5.373.297 0 5.67 0 12.297c0 5.292 3.438 9.8 8.205 11.387.6.111.82-.26.82-.577v-2.022c-3.338.726-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.755-1.333-1.755-1.089-.744.083-.729.083-.729 1.204.084 1.838 1.237 1.838 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.774.417-1.304.762-1.604-2.665-.304-5.466-1.332-5.466-5.93 0-1.31.468-2.38 1.236-3.22-.124-.304-.536-1.528.116-3.18 0 0 1.008-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.292-1.552 3.3-1.23 3.3-1.23.652 1.652.24 2.876.118 3.18.77.84 1.236 1.91 1.236 3.22 0 4.61-2.803 5.624-5.472 5.922.429.37.81 1.096.81 2.208v3.28c0 .32.21.694.825.576 4.765-1.589 8.2-6.096 8.2-11.385C24 5.67 18.627.297 12 .297z"/>
-    </svg>
-  </a>
+  <!-- Redes sociales -->
+  <div class="mt-12 flex justify-center gap-6">
+    <!-- GitHub -->
+    <a href="https://github.com/mtias2023" target="_blank" class="text-gray-400 hover:text-blue-400 transition">
+      <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 .297C5.373.297 0 5.67 0 12.297c0 5.292 3.438 9.8 8.205 11.387.6.111.82-.26.82-.577v-2.022c-3.338.726-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.755-1.333-1.755-1.089-.744.083-.729.083-.729 1.204.084 1.838 1.237 1.838 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.774.417-1.304.762-1.604-2.665-.304-5.466-1.332-5.466-5.93 0-1.31.468-2.38 1.236-3.22-.124-.304-.536-1.528.116-3.18 0 0 1.008-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.292-1.552 3.3-1.23 3.3-1.23.652 1.652.24 2.876.118 3.18.77.84 1.236 1.91 1.236 3.22 0 4.61-2.803 5.624-5.472 5.922.429.37.81 1.096.81 2.208v3.28c0 .32.21.694.825.576 4.765-1.589 8.2-6.096 8.2-11.385C24 5.67 18.627.297 12 .297z"/>
+      </svg>
+    </a>
 
-  <!-- LinkedIn -->
-  <a href="https://www.linkedin.com/in/matias-gutierrez-21753527a/" target="_blank" class="text-gray-400 hover:text-blue-400 transition">
-    <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.232c-.966 0-1.768-.802-1.768-1.768s.802-1.768 1.768-1.768 1.768.802 1.768 1.768-.802 1.768-1.768 1.768zm13.5 11.232h-3v-5.604c0-1.339-.031-3.064-1.866-3.064-1.867 0-2.154 1.459-2.154 2.965v5.703h-3v-10h2.885v1.367h.041c.402-.76 1.384-1.563 2.849-1.563 3.046 0 3.609 2.005 3.609 4.614v5.582z"/>
-    </svg>
-  </a>
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/matias-gutierrez-21753527a/" target="_blank" class="text-gray-400 hover:text-blue-400 transition">
+      <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.232c-.966 0-1.768-.802-1.768-1.768s.802-1.768 1.768-1.768 1.768.802 1.768 1.768-.802 1.768-1.768 1.768zm13.5 11.232h-3v-5.604c0-1.339-.031-3.064-1.866-3.064-1.867 0-2.154 1.459-2.154 2.965v5.703h-3v-10h2.885v1.367h.041c.402-.76 1.384-1.563 2.849-1.563 3.046 0 3.609 2.005 3.609 4.614v5.582z"/>
+      </svg>
+    </a>
 
-  <!-- Instagram -->
-  <a href="https://instagram.com/tuusuario" target="_blank" class="text-gray-400 hover:text-blue-400 transition">
-    <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.97.24 2.43.405a4.92 4.92 0 011.675 1.08 4.92 4.92 0 011.08 1.675c.165.46.351 1.26.405 2.43.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.405 2.43a4.92 4.92 0 01-1.08 1.675 4.92 4.92 0 01-1.675 1.08c-.46.165-1.26.351-2.43.405-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.97-.24-2.43-.405a4.92 4.92 0 01-1.675-1.08 4.92 4.92 0 01-1.08-1.675c-.165-.46-.351-1.26-.405-2.43-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.054-1.17.24-1.97.405-2.43a4.92 4.92 0 011.08-1.675 4.92 4.92 0 011.675-1.08c.46-.165 1.26-.351 2.43-.405 1.266-.058 1.646-.07 4.85-.07zm0-2.163C8.756 0 8.331.014 7.053.072 5.777.13 4.596.304 3.545.743a7.223 7.223 0 00-2.7 1.757A7.223 7.223 0 00.088 5.2c-.439 1.051-.613 2.232-.671 3.508C-.007 9.878 0 10.296 0 12c0 1.704-.007 2.122.072 3.8.058 1.276.232 2.457.671 3.508.439 1.051 1.055 1.913 1.757 2.7a7.223 7.223 0 002.7 1.757c1.051.439 2.232.613 3.508.671C8.331 23.986 8.756 24 12 24c3.244 0 3.669-.014 4.947-.072 1.276-.058 2.457-.232 3.508-.671a7.223 7.223 0 002.7-1.757 7.223 7.223 0 001.757-2.7c.439-1.051.613-2.232.671-3.508.079-1.678.072-2.096.072-3.8 0-1.704.007-2.122-.072-3.8-.058-1.276-.232-2.457-.671-3.508a7.223 7.223 0 00-1.757-2.7c-1.051-.439-2.232-.613-3.508-.671C15.669.014 15.244 0 12 0zm0 6.162a5.838 5.838 0 100 11.677 5.838 5.838 0 000-11.677zm0 9.678a3.84 3.84 0 110-7.68 3.84 3.84 0 010 7.68zm5.733-7.94a1.4 1.4 0 11-2.8 0 1.4 1.4 0 012.8 0z"/>
-    </svg>
-  </a>
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/mamitaniguerrez07/" target="_blank" class="text-gray-400 hover:text-blue-400 transition">
+      <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.97.24 2.43.405a4.92 4.92 0 011.675 1.08 4.92 4.92 0 011.08 1.675c.165.46.351 1.26.405 2.43.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.405 2.43a4.92 4.92 0 01-1.08 1.675 4.92 4.92 0 01-1.675 1.08c-.46.165-1.26.351-2.43.405-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.97-.24-2.43-.405a4.92 4.92 0 01-1.675-1.08 4.92 4.92 0 01-1.08-1.675c-.165-.46-.351-1.26-.405-2.43-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.054-1.17.24-1.97.405-2.43a4.92 4.92 0 011.08-1.675 4.92 4.92 0 011.675-1.08c.46-.165 1.26-.351 2.43-.405 1.266-.058 1.646-.07 4.85-.07zm0-2.163C8.756 0 8.331.014 7.053.072 5.777.13 4.596.304 3.545.743a7.223 7.223 0 00-2.7 1.757A7.223 7.223 0 00.088 5.2c-.439 1.051-.613 2.232-.671 3.508C-.007 9.878 0 10.296 0 12c0 1.704-.007 2.122.072 3.8.058 1.276.232 2.457.671 3.508.439 1.051 1.055 1.913 1.757 2.7a7.223 7.223 0 002.7 1.757c1.051.439 2.232.613 3.508.671C8.331 23.986 8.756 24 12 24c3.244 0 3.669-.014 4.947-.072 1.276-.058 2.457-.232 3.508-.671a7.223 7.223 0 002.7-1.757 7.223 7.223 0 001.757-2.7c.439-1.051.613-2.232.671-3.508.079-1.678.072-2.096.072-3.8 0-1.704.007-2.122-.072-3.8-.058-1.276-.232-2.457-.671-3.508a7.223 7.223 0 00-1.757-2.7c-1.051-.439-2.232-.613-3.508-.671C15.669.014 15.244 0 12 0zm0 6.162a5.838 5.838 0 100 11.677 5.838 5.838 0 000-11.677zm0 9.678a3.84 3.84 0 110-7.68 3.84 3.84 0 010 7.68zm5.733-7.94a1.4 1.4 0 11-2.8 0 1.4 1.4 0 012.8 0z"/>
+      </svg>
+    </a>
 
-  <!-- Correo -->
-  <a href="mailto:matigutierrez2022@gmail.com" target="_blank" class="text-gray-400 hover:text-blue-400 transition">
-    <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <path d="M12 13.065l-11.985-7.065h23.97l-11.985 7.065zm-11.985-8.065l11.985 7.065 11.985-7.065h-23.97zm0 1.936v13h23.97v-13l-11.985 7.065-11.985-7.065z"/>
-    </svg>
-  </a>
-</div>
-    </section>
+    <!-- WhatsApp -->
+    <a href="https://wa.me/5491166008018" target="_blank" class="text-gray-400 hover:text-green-400 transition">
+      <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M20.52 3.48A11.84 11.84 0 0012 .1a11.86 11.86 0 00-8.39 20.25L.1 23.9l3.65-3.51A11.85 11.85 0 0012 23.9c6.6 0 12-5.4 12-12a11.82 11.82 0 00-3.48-8.42zM12 21.55c-2.14 0-4.13-.62-5.83-1.79l-.42-.27-2.5.9.87-2.45-.28-.45A9.54 9.54 0 1121.55 12c0 5.26-4.29 9.55-9.55 9.55zm5.52-7.25c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.66.15-.2.3-.76.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.39-1.48-.88-.79-1.48-1.77-1.65-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.66-1.61-.91-2.2-.24-.58-.49-.5-.66-.5-.17 0-.37 0-.57.02-.2.02-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.08 4.48.71.31 1.26.5 1.69.64.71.23 1.35.2 1.86.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.08-.12-.27-.2-.57-.35z"/>
+      </svg>
+    </a>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-gray-800">
-        <div class="container mx-auto px-6">
-          <!-- Título -->
-          <h2 id="sobre_mi_titulo" class="text-3xl font-bold text-center text-white mb-10">Sobre mí</h2>
-  
-          <!-- Contenido -->
-          <div class="flex flex-col lg:flex-row items-center lg:items-start justify-between">
-            <!-- Texto -->
-            <div class="order-1 lg:order-2 w-full lg:w-1/2 lg:text-left mt-4 lg:mt-20 mb-6 lg:mb-0">
-              <h3 id="nombre" class="text-lg font-bold text-white mb-6">Matias Gutierrez</h3>
-              <p id="descripcion_about" class="text-lg text-gray-400">
-                Soy un desarrollador Full Stack apasionado por la creación de soluciones digitales modernas y atractivas. Cuento con experiencia tanto en frontend como en backend, utilizando tecnologías como HTML, CSS, JavaScript, diversos frameworks, y trabajando con bases de datos. Mi objetivo es ayudar a empresas y emprendedores a llevar sus ideas al mundo digital mediante sitios web intuitivos, funcionales y visualmente impactantes. Me destaco por mi capacidad de trabajo en equipo, aportando ideas y aprendiendo continuamente para seguir perfeccionando mis habilidades. Siempre busco nuevos desafíos que me permitan crecer profesionalmente.
-              </p>
-            </div>
-  
-            <!-- Imagen -->
-            <div class="order-2 lg:order-1 w-full lg:w-1/3 flex justify-center">
-              <img 
-                src="assets/images/ilustracion_mia.png" 
-                alt="Sobre mí" 
-                class="w-fullmax-w-[500px] lg:max-w-[500px] rounded-full object-cover shadow-lg"
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-  
+    <!-- Correo -->
+    <a href="mailto:matigutierrez2022@gmail.com" target="_blank" class="text-gray-400 hover:text-blue-400 transition">
+      <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 13.065l-11.985-7.065h23.97l-11.985 7.065zm-11.985-8.065l11.985 7.065 11.985-7.065h-23.97zm0 1.936v13h23.97v-13l-11.985 7.065-11.985-7.065z"/>
+      </svg>
+    </a>
+  </div>
+</section>
+
+
+    <!-- Perfil Section -->
+<section id="about" class="py-20 bg-gray-800">
+  <div class="container mx-auto px-6">
+    <!-- Título -->
+    <h2 class="text-3xl font-bold text-center text-white mb-10">PERFIL</h2>
+
+    <!-- Contenido -->
+    <div class="flex flex-col lg:flex-row items-center lg:items-center justify-between gap-10">
+      <!-- Texto e información -->
+      <div class="order-1 w-full lg:w-1/2 lg:text-left flex flex-col justify-center">
+        <h3 class="text-2xl font-bold text-white mb-4">Información Personal</h3>
+        <p class="text-lg text-gray-300 mb-4">
+           Soy un <strong>Desarrollador Web Full Stack</strong> apasionado por transformar ideas en experiencias digitales únicas. Me especializo en crear soluciones modernas y funcionales, combinando diseño, código y usabilidad para generar sitios web atractivos y memorables. Trabajo tanto en <strong>frontend</strong> como <strong>backend</strong>, siempre adaptándome a las necesidades de cada proyecto.
+         </p>
+
+         <p class="text-lg text-gray-300 mb-6">
+           Mi objetivo es ayudar a empresas y emprendedores a llevar sus ideas al mundo digital de manera eficiente y profesional. Me destaco por mi capacidad de trabajo en equipo, creatividad y aprendizaje constante, siempre buscando nuevos desafíos que me permitan crecer y perfeccionar mis habilidades en el desarrollo web.
+         </p>
+
+
+        <!-- Información personal con iconos -->
+        <ul class="text-gray-300 space-y-3">
+          <li class="flex items-center gap-3">
+            <svg class="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 12c2.7 0 4.875-2.175 4.875-4.875S14.7 2.25 12 2.25 7.125 4.425 7.125 7.125 9.3 12 12 12zm0 2.25c-3.075 0-9.225 1.575-9.225 4.65v2.325h18.45v-2.325c0-3.075-6.15-4.65-9.225-4.65z"/>
+            </svg>
+            <span>Matías Gutierrez</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <svg class="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            </svg>
+            <span>Buenos Aires, Argentina</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <svg class="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 13.065l-11.985-7.065h23.97l-11.985 7.065zm-11.985-8.065l11.985 7.065 11.985-7.065h-23.97zm0 1.936v13h23.97v-13l-11.985 7.065-11.985-7.065z"/>
+            </svg>
+            <span>matigutierrez2022@gmail.com</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Imagen -->
+      <div class="order-2 w-full lg:w-1/3 flex justify-center lg:justify-end">
+        <img 
+          src="assets/images/yo02-Photoroom.png" 
+          alt="Matías Gutierrez" 
+          class="w-full max-w-[400px] lg:max-w-[400px] rounded-full object-cover shadow-lg"
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+
     <!-- Ability Section -->
-    <section id="ability" class="py-20 bg-gray-900">
-    <div class="container mx-auto px-6">
-        <h3 id="mis_habilidades" class="text-3xl font-bold text-center text-white mb-10">Mis Habilidades</h3>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-            <div class="flex flex-col items-center p-4 bg-gray-700 rounded-lg shadow-lg">
-                <div class="bg-gray-900 p-4 rounded-full border-4 border-red-500">
-                    <img src="assets/images/html.png" 
-                         alt="HTML" class="w-16 h-16">
-                </div>
-                <p class="mt-4 text-gray-300 text-center">HTML</p>
-            </div>
-            <div class="flex flex-col items-center p-4 bg-gray-700 rounded-lg shadow-lg">
-                <div class="bg-gray-900 p-4 rounded-full border-4 border-blue-300">
-                    <img src="assets/images/css.svg" 
-                         alt="CSS" class="w-16 h-16">
-                </div>
-                <p class="mt-4 text-gray-300 text-center">CSS</p>
-            </div>
-            <div class="flex flex-col items-center p-4 bg-gray-700 rounded-lg shadow-lg">
-                <div class="bg-gray-900 p-4 rounded-full border-4 border-yellow-300">
-                    <img src="assets/images/JavaScript-logo.png" 
-                         alt="JavaScript" class="w-16 h-16">
-                </div>
-                <p class="mt-4 text-gray-300 text-center">JavaScript</p>
-            </div>
-            <div class="flex flex-col items-center p-4 bg-gray-700 rounded-lg shadow-lg">
-                <div class="bg-gray-900 p-4 rounded-full border-4 border-green-400">
-                    <img src="assets/images/vue.png" 
-                         alt="vue" class="w-16 h-16">
-                </div>
-                <p class="mt-4 text-gray-300 text-center">Vue</p>
-            </div>
-            <div class="flex flex-col items-center p-4 bg-gray-700 rounded-lg shadow-lg">
-              <div class="bg-gray-900 p-4 rounded-full border-4 border-blue-300">
-                  <img src="assets/images/react.png" 
-                       alt="Wordpress" class="w-16 h-16">
-              </div>
-              <p class="mt-4 text-gray-300 text-center">React</p>
-          </div>
-            <div class="flex flex-col items-center p-4 bg-gray-700 rounded-lg shadow-lg">
-                <div class="bg-gray-900 p-4 rounded-full border-4 border-blue-400">
-                    <img src="assets/images/wordpress.png" 
-                         alt="Wordpress" class="w-16 h-16">
-                </div>
-                <p class="mt-4 text-gray-300 text-center">WordPress</p>
-            </div>
-            <div class="flex flex-col items-center p-4 bg-gray-700 rounded-lg shadow-lg">
-                <div class="bg-gray-900 p-4 rounded-full border-4 border-blue-200">
-                    <img src="assets/images/tailwind-css.png" 
-                         alt="Tailwind CSS" class="w-16 h-16">
-                </div>
-                <p class="mt-4 text-gray-300 text-center">Tailwind CSS</p>
-            </div>
-            <div class="flex flex-col items-center p-4 bg-gray-700 rounded-lg shadow-lg">
-                <div class="bg-gray-900 p-4 rounded-full border-4 border-purple-500">
-                    <img src="assets/images/Bootstrap_logo.png" 
-                         alt="Bootstrap" class="w-16 h-16">
-                </div>
-                <p class="mt-4 text-gray-300 text-center">Bootstrap</p>
-            </div>
-            <div class="flex flex-col items-center p-4 bg-gray-700 rounded-lg shadow-lg">
-                <div class="bg-gray-900 p-4 rounded-full border-4 border-green-100">
-                    <img src="assets/images/node.webp" 
-                         alt="Firebase" class="w-16 h-16">
-                </div>
-                <p class="mt-4 text-gray-300 text-center">Node.js</p>
-            </div>
-            <div class="flex flex-col items-center p-4 bg-gray-700 rounded-lg shadow-lg">
-              <div class="bg-gray-900 p-4 rounded-full border-4 border-yellow-500">
-                  <img src="assets/images/firebase.png" 
-                       alt="Firebase" class="w-16 h-16">
-              </div>
-              <p class="mt-4 text-gray-300 text-center">Firebase</p>
-          </div>
-            <div class="flex flex-col items-center p-4 bg-gray-700 rounded-lg shadow-lg">
-                <div class="bg-gray-900 p-4 rounded-full border-4 border-neutral-300">
-                    <img src="assets/images/github.png" 
-                         alt="github" class="w-16 h-16">
-                </div>
-                <p class="mt-4 text-gray-300 text-center">GitHub</p>
-            </div>
-            <div class="flex flex-col items-center p-4 bg-gray-700 rounded-lg shadow-lg">
-                <div class="bg-gray-900 p-4 rounded-full border-4 border-blue-900">
-                    <img src="assets/images/Adobe_Photoshop.png" 
-                         alt="Photoshop" class="w-16 h-16">
-                </div>
-                <p class="mt-4 text-gray-300 text-center">Photoshop</p>
-            </div>
-        </div>
-      </div>        
-    </section>
+<section id="ability" class="py-20 bg-gray-900">
+  <div class="container mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center text-white mb-10">
+      MIS HABILIDADES
+    </h3>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
+
+      <!-- FRONTEND -->
+      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg">
+        <img src="assets/images/html.png" alt="HTML" class="w-12 h-12 grayscale">
+        <p class="mt-2 text-gray-300 text-center text-sm">HTML</p>
+      </div>
+
+      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg">
+        <img src="assets/images/css.svg" alt="CSS" class="w-12 h-12 grayscale">
+        <p class="mt-2 text-gray-300 text-center text-sm">CSS</p>
+      </div>
+
+      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg">
+        <img src="assets/images/JavaScript-logo.png" alt="JavaScript" class="w-12 h-12 grayscale">
+        <p class="mt-2 text-gray-300 text-center text-sm">JavaScript</p>
+      </div>
+
+      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg">
+        <img src="assets/images/vue.png" alt="Vue" class="w-12 h-12 grayscale">
+        <p class="mt-2 text-gray-300 text-center text-sm">Vue</p>
+      </div>
+
+      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg">
+        <img src="assets/images/react.png" alt="React" class="w-12 h-12 grayscale">
+        <p class="mt-2 text-gray-300 text-center text-sm">React</p>
+      </div>
+
+      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg">
+        <img src="assets/images/tailwind-css.png" alt="Tailwind CSS" class="w-12 h-12 grayscale">
+        <p class="mt-2 text-gray-300 text-center text-sm">Tailwind CSS</p>
+      </div>
+
+      <!-- DISEÑO / FRONTEND -->
+      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg">
+        <img src="assets/images/Bootstrap_logo.png" alt="Bootstrap" class="w-12 h-12 grayscale">
+        <p class="mt-2 text-gray-300 text-center text-sm">Bootstrap</p>
+      </div>
+
+      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg">
+        <img src="assets/images/Adobe_Photoshop.png" alt="Photoshop" class="w-12 h-12 grayscale">
+        <p class="mt-2 text-gray-300 text-center text-sm">Photoshop</p>
+      </div>
+
+      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg">
+        <img src="assets/images/ilustrator.png" alt="Illustrator" class="w-12 h-12 grayscale">
+        <p class="mt-2 text-gray-300 text-center text-sm">Illustrator</p>
+      </div>
+
+      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg">
+        <img src="assets/images/wordpress.png" alt="WordPress" class="w-12 h-12 grayscale">
+        <p class="mt-2 text-gray-300 text-center text-sm">WordPress</p>
+      </div>
+
+      <!-- BACKEND -->
+      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg">
+        <img src="assets/images/node.webp" alt="Node.js" class="w-12 h-12 grayscale">
+        <p class="mt-2 text-gray-300 text-center text-sm">Node.js</p>
+      </div>
+
+      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg">
+        <img src="assets/images/PHP-logo.png" alt="PHP" class="w-12 h-12 grayscale">
+        <p class="mt-2 text-gray-300 text-center text-sm">PHP</p>
+      </div>
+
+      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg">
+        <img src="assets/images/firebase.png" alt="Firebase" class="w-12 h-12 grayscale">
+        <p class="mt-2 text-gray-300 text-center text-sm">Firebase</p>
+      </div>
+
+      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg">
+        <img src="assets/images/mongBD.png" alt="MongoDB" class="w-12 h-12 grayscale">
+        <p class="mt-2 text-gray-300 text-center text-sm">MongoDB</p>
+      </div>
+
+      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg">
+        <img src="assets/images/APIRES.png" alt="API REST" class="w-12 h-12 grayscale">
+        <p class="mt-2 text-gray-300 text-center text-sm">API REST</p>
+      </div>
+
+      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg">
+        <img src="assets/images/github.png" alt="GitHub" class="w-12 h-12 grayscale">
+        <p class="mt-2 text-gray-300 text-center text-sm">GitHub</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+   <!-- Sección Servicios -->
+<section id="services" class="py-20 bg-gray-800">
+  <div class="max-w-7xl mx-auto text-center">
+    <!-- Título -->
+    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">SERVICIOS</h2>
+    <p class="text-gray-400 mb-12">Elige el plan ideal para tu negocio o proyecto digital.</p>
+
+    <!-- Grid de Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <!-- Pack Básico -->
+      <div class="bg-gray-900 rounded-2xl shadow-xl p-6 hover:scale-105 hover:shadow-2xl transform transition relative">
+        <h3 class="text-2xl font-bold text-white mb-3"><i class="fas fa-star mr-2 text-blue-500"></i>Diseño Básico</h3>
+        <p class="text-gray-300 text-sm mb-4">
+          Ideal para negocios y profesionales que están comenzando y desean tener un sitio web atractivo, simple y sin complicaciones.
+        </p>
+        <ul class="text-gray-400 text-sm space-y-2 mb-6 text-left">
+          <li>✔ One Page - hasta 4 Secciones</li>
+          <li>✔ 1 Banner Principal Animado</li>
+          <li>✔ Adaptable a Cualquier Dispositivo</li>
+          <li>✔ Enlace a Redes Sociales</li>
+          <li>✔ Formulario de Contacto (3 Campos)</li>
+          <li>✔ Ubicación en Google Maps</li>
+          <li>✔ Sitio Optimizado SEO</li>
+          <li>✔ Dominio .COM Gratis por 1 Año</li>
+          <li>✔ Hosting Personal Gratis - 1 Año</li>
+          <li>✔ 1 Cuenta de Correo Incluida</li>
+        </ul>
+        <p class="text-lg font-semibold text-white mb-4">Desde $125.000 <span class="text-gray-400">+ IVA</span></p>
+        <a href="https://wa.me/541166008018?text=Hola%20quiero%20este%20pack:%20Diseño%20Básico" 
+           target="_blank"
+           class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+          <i class="fab fa-whatsapp mr-2"></i> Comprar
+        </a>
+      </div>
+
+      <!-- Pack Intermedio (Recomendado) -->
+      <div class="bg-gray-900 rounded-2xl shadow-2xl border-2 border-green-500 p-6 hover:scale-105 hover:shadow-2xl transform transition relative">
+        <!-- Badge Recomendado -->
+        <span class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-green-500 text-white text-xs font-semibold px-3 py-1 rounded-full shadow-md">
+          ⭐ Recomendado
+        </span>
+        <h3 class="text-2xl font-bold text-white mb-3"><i class="fas fa-rocket mr-2 text-green-400"></i>Diseño Intermedio</h3>
+        <p class="text-gray-300 text-sm mb-4">
+          Perfecto para empresas y profesionales que buscan un sitio más completo y con mayor funcionalidad.
+        </p>
+        <ul class="text-gray-400 text-sm space-y-2 mb-6 text-left">
+          <li>✔ Hasta 8 Secciones</li>
+          <li>✔ 3 Banners Animados</li>
+          <li>✔ Blog Autoadministrable</li>
+          <li>✔ Diseño Responsive Avanzado</li>
+          <li>✔ Enlace a Redes Sociales</li>
+          <li>✔ Integración con WhatsApp</li>
+          <li>✔ Formulario de Contacto (5 Campos)</li>
+          <li>✔ Sitio Optimizado SEO</li>
+          <li>✔ Galería Multimedia</li>
+          <li>✔ Ubicación en Google Maps</li>
+          <li>✔ Dominio .COM Gratis por 1 Año</li>
+          <li>✔ Hosting Profesional - 1 Año</li>
+          <li>✔ 5 Cuentas de Correo Incluidas</li>
+        </ul>
+        <p class="text-lg font-semibold text-white mb-4">Desde $200.000 <span class="text-gray-400">+ IVA</span></p>
+        <a href="https://wa.me/541166008018?text=Hola%20quiero%20este%20pack:%20Diseño%20Intermedio" 
+           target="_blank"
+           class="inline-flex items-center bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition">
+          <i class="fab fa-whatsapp mr-2"></i> Comprar
+        </a>
+      </div>
+
+      <!-- Pack Avanzado -->
+      <div class="bg-gray-900 rounded-2xl shadow-xl p-6 hover:scale-105 hover:shadow-2xl transform transition relative">
+        <h3 class="text-2xl font-bold text-white mb-3"><i class="fas fa-shopping-cart mr-2 text-blue-500"></i>E-commerce</h3>
+        <p class="text-gray-300 text-sm mb-4">
+          Tu tienda online lista para vender con pasarelas de pago, carrito y gestión de stock.
+        </p>
+        <ul class="text-gray-400 text-sm space-y-2 mb-6 text-left">
+          <li>✔ Home + 10 Páginas Interiores</li>
+          <li>✔ Hasta 50 Productos Iniciales</li>
+          <li>✔ Carrito de Compras + Gestión de Stock</li>
+          <li>✔ + 3 Banners Principales Animados</li>
+          <li>✔ Galería de Imágenes</li>
+          <li>✔ Mapa del Sitio Web</li>
+          <li>✔ Panel de Administración</li>
+          <li>✔ Certificado SSL</li>
+          <li>✔ Hosting + Dominio Incluidos</li>
+          <li>✔ Integración con Redes Sociales</li>
+          <li>✔ SEO Avanzado</li>
+          <li>✔ Optimización de Velocidad y Rendimiento</li>
+          <li>✔ + 5 Formularios de Contacto</li>
+          <li>✔ 10 Cuentas de Correo Incluidas</li>
+        </ul>
+
+        <p class="text-lg font-semibold text-white mb-4">Desde $350.000 <span class="text-gray-400">+ IVA</span></p>
+        <a href="https://wa.me/541166008018?text=Hola%20quiero%20este%20pack:%20E-commerce" 
+           target="_blank"
+           class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+          <i class="fab fa-whatsapp mr-2"></i> Comprar
+        </a>
+      </div>
+
+      <!-- Pack Personalizado -->
+      <div class="bg-gray-900 rounded-2xl shadow-xl p-6 hover:scale-105 hover:shadow-2xl transform transition relative">
+        <h3 class="text-2xl font-bold text-white mb-3"><i class="fas fa-laptop-code mr-2 text-blue-500"></i>Proyecto Personalizado</h3>
+        <p class="text-gray-300 text-sm mb-4">
+          Ideal para proyectos grandes, aplicaciones web, sistemas a medida o desarrollos avanzados.
+        </p>
+       <ul class="text-gray-400 text-sm space-y-2 mb-6 text-left">
+         <li>✔ Reunión inicial 1 a 1 para definir tus necesidades exactas</li>
+         <li>✔ Diseño UX/UI y experiencia de usuario adaptada a tu proyecto</li>
+         <li>✔ Desarrollo a medida: página web, app móvil, sistema o algoritmo</li>
+         <li>✔ Integración con APIs, bases de datos y sistemas existentes</li>
+         <li>✔ Dashboard o panel de control personalizado según tu gestión</li>
+         <li>✔ Seguridad y escalabilidad para crecer con tu proyecto</li>
+         <li>✔ Soporte, mantenimiento y actualizaciones dedicadas</li>
+         <li>✔ Estrategia digital, SEO y optimización según el tipo de proyecto</li>
+       </ul>
+
+        <p class="text-lg font-semibold text-white mb-4">A cotizar según requerimientos</p>
+        <a href="https://wa.me/541166008018?text=Hola%20quiero%20este%20pack:%20Proyecto%20Personalizado" 
+           target="_blank"
+           class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+          <i class="fab fa-whatsapp mr-2"></i> Solicitar Reunión
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
       <!-- Education Section -->
-<section id="education" class="py-20 bg-gray-800">
+<section id="education" class="py-20 bg-gray-900">
   <div class="container mx-auto px-6">
-    <h2 id="mi_formacion" class="text-3xl font-bold text-center text-white mb-10">Formación Académica</h2>
+    <h2 id="mi_formacion" class="text-3xl font-bold text-center text-white mb-10">FORMACIÓN ACADÉMICA</h2>
 
     <!-- Contenido -->
     <div class="flex flex-wrap justify-center mt-10">
       <!-- Tarjeta 1 -->
       <div class="w-full sm:w-1/2 md:w-1/3 p-4">
-        <div class="bg-gray-900 shadow-lg rounded-lg p-6 text-center">
+        <div class="bg-gray-800 shadow-lg rounded-lg p-6 text-center">
           <img src="assets/images/logo-davinci.png" alt="Tecnicatura en Desarrollo" class="w-38 h-48 mx-auto mb-2">
           <h3 id="academia" class="text-xl font-bold text-blue-400">Tecnicatura en Desarrollo y Programación Web</h3>
           <p id="da_vinci" class="mt-2 text-gray-400">Escuela Da Vinci | 2022 - 2025</p>
@@ -305,7 +473,7 @@ Contáctame
 
       <!-- Tarjeta 2 -->
       <div class="w-full sm:w-1/2 md:w-1/3 p-4">
-        <div class="bg-gray-900 shadow-lg rounded-lg p-6 text-center">
+        <div class="bg-gray-800 shadow-lg rounded-lg p-6 text-center">
           <img src="assets/images/logo-google.png" alt="Curso de HTML y CSS" class="w-38 h-48 mx-auto mb-2">
           <h3 id="academia1" class="text-xl font-bold text-blue-400">Curso de introducción al desarrollo web: HTML y CSS</h3>
           <p class="mt-2 text-gray-400">Google Actívate | 2025</p>
@@ -314,7 +482,7 @@ Contáctame
 
       <!-- Tarjeta 3 -->
       <div class="w-full sm:w-1/2 md:w-1/3 p-4">
-        <div class="bg-gray-900 shadow-lg rounded-lg p-6 text-center">
+        <div class="bg-gray-800 shadow-lg rounded-lg p-6 text-center">
           <img src="assets/images/EDteam-logo.png" alt="Curso de Programación" class="w-38 h-48 mx-auto mb-2">
           <h3 id="academia2" class="text-xl font-bold text-blue-400">Curso de Introdución a la Programación web</h3>
           <p class="mt-2 text-gray-400">EDteam | 2025</p>
@@ -326,13 +494,13 @@ Contáctame
 
 
 <!-- Projects Section -->
-<section id="projects" class="py-20 bg-gray-900">
+<section id="projects" class="py-20 bg-gray-800">
     <div class="container mx-auto px-6">
-      <h2 id="proyecto" class="text-3xl font-bold text-center text-white">Proyectos</h2>
+      <h2 id="proyecto" class="text-3xl font-bold text-center text-white">PROYECTOS</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
         
         <!-- Proyecto 1 -->
-        <div class="bg-gray-800 shadow-lg rounded-lg overflow-hidden">
+        <div class="bg-gray-900 shadow-lg rounded-lg overflow-hidden">
           <img src="assets/images/proyecto-fabo.png" alt="Proyecto 1" class="w-full">
           <div class="p-6">
             <h3 class="text-xl font-bold text-blue-400">FABO</h3>
@@ -353,7 +521,7 @@ Contáctame
         </div>
         
          <!-- Proyecto 2 -->
-         <div class="bg-gray-800 shadow-lg rounded-lg overflow-hidden">
+         <div class="bg-gray-900 shadow-lg rounded-lg overflow-hidden">
           <img src="assets/images/landing_fabo.png" alt="Proyecto 1" class="w-full">
           <div class="p-6">
             <h3 class="text-xl font-bold text-blue-400">Landing page de FABO</h3>
@@ -374,7 +542,7 @@ Contáctame
         </div>
 
         <!-- Proyecto 3 -->
-        <div class="bg-gray-800 shadow-lg rounded-lg overflow-hidden">
+        <div class="bg-gray-900 shadow-lg rounded-lg overflow-hidden">
           <img src="assets/images/proyecto-peliculas.png" alt="Proyecto 2" class="w-full">
           <div class="p-6">
             <h3 id="buscador" class="text-xl font-bold text-blue-400">Buscador de peliculas</h3>
@@ -395,7 +563,7 @@ Contáctame
         </div>
   
         <!-- Proyecto 4 -->
-        <div class="bg-gray-800 shadow-lg rounded-lg overflow-hidden">
+        <div class="bg-gray-900 shadow-lg rounded-lg overflow-hidden">
           <img src="assets/images/proyecto-delicias_express.png" alt="Proyecto 3" class="w-full">
           <div class="p-6">
             <h3 id="delicias" class="text-xl font-bold text-blue-400">Delicias Express</h3>
@@ -420,9 +588,9 @@ Contáctame
   </section>
   
   
-  <section id="contact" class="py-20 bg-gray-800">
+  <section id="contact" class="py-20 bg-gray-900">
     <div class="container mx-auto px-6">
-        <h2 id="contactos" class="text-3xl font-bold text-center text-white">Contacto</h2>
+        <h2 id="contactos" class="text-3xl font-bold text-center text-white">CONTACTOS</h2>
         <form id="contact-form" class="mt-10 max-w-lg mx-auto bg-gray-700 shadow-lg rounded-lg p-6">
             <div class="mb-4">
                 <label id="nombre1" for="name" class="block text-sm font-bold text-gray-300 mb-2">Nombre</label>
@@ -448,7 +616,7 @@ Contáctame
 
 
     <!-- Footer -->
-<footer class="bg-gray-900 text-gray-500 py-8">
+<footer class="bg-gray-800 text-gray-500 py-8">
     <div class="container mx-auto text-center">
         <!-- Derechos reservados -->
         <p id="footer" class="text-gray-400 mb-4">&copy; 2025 Portafolio de Matias Gutierrez. Todos los derechos reservados.</p>
@@ -470,12 +638,18 @@ Contáctame
             </a>
 
            <!-- Instagram -->
-            <a href="https://instagram.com/tuusuario" target="_blank" class="text-gray-400 hover:text-blue-400 transition">
+            <a href="https://www.instagram.com/matigutierrez07/" target="_blank" class="text-gray-400 hover:text-blue-400 transition">
                 <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.97.24 2.43.405a4.92 4.92 0 011.675 1.08 4.92 4.92 0 011.08 1.675c.165.46.351 1.26.405 2.43.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.405 2.43a4.92 4.92 0 01-1.08 1.675 4.92 4.92 0 01-1.675 1.08c-.46.165-1.26.351-2.43.405-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.97-.24-2.43-.405a4.92 4.92 0 01-1.675-1.08 4.92 4.92 0 01-1.08-1.675c-.165-.46-.351-1.26-.405-2.43-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.054-1.17.24-1.97.405-2.43a4.92 4.92 0 011.08-1.675 4.92 4.92 0 011.675-1.08c.46-.165 1.26-.351 2.43-.405 1.266-.058 1.646-.07 4.85-.07m0-2.163C8.756 0 8.331.014 7.053.072 5.777.13 4.596.304 3.545.743a7.223 7.223 0 00-2.7 1.757A7.223 7.223 0 00.088 5.2c-.439 1.051-.613 2.232-.671 3.508C-.007 9.878 0 10.296 0 12c0 1.704-.007 2.122.072 3.8.058 1.276.232 2.457.671 3.508.439 1.051 1.055 1.913 1.757 2.7a7.223 7.223 0 002.7 1.757c1.051.439 2.232.613 3.508.671C8.331 23.986 8.756 24 12 24c3.244 0 3.669-.014 4.947-.072 1.276-.058 2.457-.232 3.508-.671a7.223 7.223 0 002.7-1.757 7.223 7.223 0 001.757-2.7c.439-1.051.613-2.232.671-3.508.079-1.678.072-2.096.072-3.8 0-1.704.007-2.122-.072-3.8-.058-1.276-.232-2.457-.671-3.508a7.223 7.223 0 00-1.757-2.7A7.223 7.223 0 0020.455.743c-1.051-.439-2.232-.613-3.508-.671C15.669.014 15.244 0 12 0zm0 5.838A6.162 6.162 0 015.838 12 6.162 6.162 0 0112 18.162 6.162 6.162 0 0118.162 12 6.162 6.162 0 0112 5.838zm0 10.143A3.981 3.981 0 018.019 12 3.981 3.981 0 0112 8.019 3.981 3.981 0 0115.981 12 3.981 3.981 0 0112 15.981zm6.406-11.845a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/>
                 </svg>
             </a>
 
+            <!-- WhatsApp -->
+            <a href="https://wa.me/5491166008018" target="_blank" class="text-gray-400 hover:text-green-400 transition">
+              <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.52 3.48A11.84 11.84 0 0012 .1a11.86 11.86 0 00-8.39 20.25L.1 23.9l3.65-3.51A11.85 11.85 0 0012 23.9c6.6 0 12-5.4 12-12a11.82 11.82 0 00-3.48-8.42zM12 21.55c-2.14 0-4.13-.62-5.83-1.79l-.42-.27-2.5.9.87-2.45-.28-.45A9.54 9.54 0 1121.55 12c0 5.26-4.29 9.55-9.55 9.55zm5.52-7.25c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.66.15-.2.3-.76.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.39-1.48-.88-.79-1.48-1.77-1.65-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.66-1.61-.91-2.2-.24-.58-.49-.5-.66-.5-.17 0-.37 0-.57.02-.2.02-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.08 4.48.71.31 1.26.5 1.69.64.71.23 1.35.2 1.86.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.08-.12-.27-.2-.57-.35z"/>
+              </svg>
+            </a>
 
             <!-- Correo -->
             <a href="mailto:matigutierrez2022@gmail.com" target="_blank" class="text-gray-400 hover:text-blue-400 transition">
