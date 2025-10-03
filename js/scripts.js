@@ -161,4 +161,24 @@ document.querySelector('form').addEventListener('submit', function (e) {
             console.error('FAILED...', error);
         });
 });
-
+ const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 16,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      480: {
+        slidesPerView: 4,
+      },
+      640: {
+        slidesPerView: 5,
+      },
+    },
+  });
