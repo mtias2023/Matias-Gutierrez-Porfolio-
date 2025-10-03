@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matias Gutierrez | Desarrollador Web</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo.png">
-
 </head>
-
 <script>
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
@@ -29,7 +27,6 @@
 </script>
 
 <body class="bg-gray-900 text-gray-100">
-   
   <header class="bg-gray-800 fixed w-full z-50 shadow">
     <nav class="container mx-auto flex justify-between items-center py-2 relative ">
         <!-- Logo -->
@@ -96,40 +93,31 @@
     <!-- Hero Section -->
 <section 
   id="home" 
-  class="relative min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-900 to-black text-white px-6 py-32 text-center"
->
-  <!-- Título principal -->
-  <h1 
-    class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-wide drop-shadow-lg"
-  >
-    Hola, soy <span class="text-blue-500">Matías Gutierrez</span>
-  </h1>
+  class="relative min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-900 to-black text-white px-6 py-32 text-center">
+ <!-- Título principal -->
+ <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-wide relative">
+  Hola, soy 
+  <span class="text-blue-600 relative z-10 name-3d">Matías Gutierrez</span>
+</h1>
 
   <!-- Subtítulo -->
   <p 
     class="mt-6 text-base sm:text-lg md:text-xl lg:text-2xl font-medium text-gray-300 max-w-2xl mx-auto animate__animated animate__fadeIn"
-    style="animation-duration: 3s;"
-  >
-    Desarrollador Web Full Stack apasionado por crear experiencias digitales únicas.
+    style="animation-duration: 3s;">Desarrollador Web Full Stack apasionado por crear experiencias digitales únicas.
   </p>
-
   <!-- Botones -->
   <div class="mt-10 flex flex-wrap justify-center gap-6">
     <!-- Contáctame -->
     <a 
       href="#contact" 
-      class="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg shadow-lg transition font-semibold"
-    >
-      Contáctame
+      class="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg shadow-lg transition font-semibold">Contáctame
     </a>
 
     <!-- Descargar CV -->
     <a 
       href="https://drive.google.com/uc?export=download&id=1KqKznpqLaZZqzoY3_Q2-BkcFn7dyySir" 
       download 
-      class="px-6 py-3 bg-gray-700 hover:bg-gray-800 rounded-lg shadow-lg transition font-semibold"
-    >
-      Descargar CV
+      class="px-6 py-3 bg-gray-700 hover:bg-gray-800 rounded-lg shadow-lg transition font-semibold">Descargar CV
     </a>
   </div>
 
@@ -192,7 +180,6 @@
            Mi objetivo es ayudar a empresas y emprendedores a llevar sus ideas al mundo digital de manera eficiente y profesional. Me destaco por mi capacidad de trabajo en equipo, creatividad y aprendizaje constante, siempre buscando nuevos desafíos que me permitan crecer y perfeccionar mis habilidades en el desarrollo web.
          </p>
 
-
         <!-- Información personal con iconos -->
         <ul class="text-gray-300 space-y-3">
           <li class="flex items-center gap-3">
@@ -202,11 +189,11 @@
             <span>Matías Gutierrez</span>
           </li>
           <li class="flex items-center gap-3">
-            <svg class="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-            </svg>
-            <span>Buenos Aires, Argentina</span>
-          </li>
+           <svg class="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+             <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+           </svg>
+           <span>Buenos Aires, Argentina</span>
+         </li>
           <li class="flex items-center gap-3">
             <svg class="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 13.065l-11.985-7.065h23.97l-11.985 7.065zm-11.985-8.065l11.985 7.065 11.985-7.065h-23.97zm0 1.936v13h23.97v-13l-11.985 7.065-11.985-7.065z"/>
@@ -228,99 +215,122 @@
   </div>
 </section>
 
-
-    <!-- Ability Section -->
+   <!-- Ability Section -->
 <section id="ability" class="py-20 bg-gray-900">
   <div class="container mx-auto px-6">
     <h3 class="text-3xl font-bold text-center text-white mb-10">
       MIS HABILIDADES
     </h3>
 
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
-
-      <!-- FRONTEND -->
-      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg">
-        <img src="assets/images/html.png" alt="HTML" class="w-12 h-12 grayscale">
-        <p class="mt-2 text-gray-300 text-center text-sm">HTML</p>
+    <!-- Mobile (Swiper con flechas) -->
+    <div class="sm:hidden">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- HTML -->
+          <div class="swiper-slide flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg w-28">
+            <img src="assets/images/html.png" alt="HTML" class="w-12 h-12 grayscale">
+            <p class="mt-2 text-gray-300 text-sm">HTML</p>
+          </div>
+          <!-- CSS -->
+          <div class="swiper-slide flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg w-28">
+            <img src="assets/images/css.svg" alt="CSS" class="w-12 h-12 grayscale">
+            <p class="mt-2 text-gray-300 text-sm">CSS</p>
+          </div>
+          <!-- JavaScript -->
+          <div class="swiper-slide flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg w-28">
+            <img src="assets/images/JavaScript-logo.png" alt="JavaScript" class="w-12 h-12 grayscale">
+            <p class="mt-2 text-gray-300 text-sm">JavaScript</p>
+          </div>
+          <!-- Vue -->
+          <div class="swiper-slide flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg w-28">
+            <img src="assets/images/vue.png" alt="Vue.js" class="w-12 h-12 grayscale">
+            <p class="mt-2 text-gray-300 text-sm">Vue.js</p>
+          </div>
+          <!-- React -->
+          <div class="swiper-slide flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg w-28">
+            <img src="assets/images/react.png" alt="React" class="w-12 h-12 grayscale">
+            <p class="mt-2 text-gray-300 text-sm">React</p>
+          </div>
+          <!-- Tailwind -->
+          <div class="swiper-slide flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg w-28">
+            <img src="assets/images/tailwind-css.png" alt="Tailwind CSS" class="w-12 h-12 grayscale">
+            <p class="mt-2 text-gray-300 text-sm">Tailwind</p>
+          </div>
+          <!-- Bootstrap -->
+          <div class="swiper-slide flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg w-28">
+            <img src="assets/images/Bootstrap_logo.png" alt="Bootstrap" class="w-12 h-12 grayscale">
+            <p class="mt-2 text-gray-300 text-sm">Bootstrap</p>
+          </div>
+          <!-- Photoshop -->
+          <div class="swiper-slide flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg w-28">
+            <img src="assets/images/Adobe_Photoshop.png" alt="Photoshop" class="w-12 h-12 grayscale">
+            <p class="mt-2 text-gray-300 text-sm">Photoshop</p>
+          </div>
+          <!-- Illustrator -->
+          <div class="swiper-slide flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg w-28">
+            <img src="assets/images/ilustrator.png" alt="Illustrator" class="w-12 h-12 grayscale">
+            <p class="mt-2 text-gray-300 text-sm">Illustrator</p>
+          </div>
+          <!-- WordPress -->
+          <div class="swiper-slide flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg w-28">
+            <img src="assets/images/wordpress.png" alt="WordPress" class="w-12 h-12 grayscale">
+            <p class="mt-2 text-gray-300 text-sm">WordPress</p>
+          </div>
+          <!-- Node.js -->
+          <div class="swiper-slide flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg w-28">
+            <img src="assets/images/node.webp" alt="Node.js" class="w-12 h-12 grayscale">
+            <p class="mt-2 text-gray-300 text-sm">Node.js</p>
+          </div>
+          <!-- PHP -->
+          <div class="swiper-slide flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg w-28">
+            <img src="assets/images/PHP-logo.png" alt="PHP" class="w-12 h-12 grayscale">
+            <p class="mt-2 text-gray-300 text-sm">PHP</p>
+          </div>
+          <!-- Firebase -->
+          <div class="swiper-slide flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg w-28">
+            <img src="assets/images/firebase.png" alt="Firebase" class="w-12 h-12 grayscale">
+            <p class="mt-2 text-gray-300 text-sm">Firebase</p>
+          </div>
+          <!-- MongoDB -->
+          <div class="swiper-slide flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg w-28">
+            <img src="assets/images/mongBD.png" alt="MongoDB" class="w-12 h-12 grayscale">
+            <p class="mt-2 text-gray-300 text-sm">MongoDB</p>
+          </div>
+          <!-- API REST -->
+          <div class="swiper-slide flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg w-28">
+            <img src="assets/images/APIRES.png" alt="API REST" class="w-12 h-12 grayscale">
+            <p class="mt-2 text-gray-300 text-sm">API REST</p>
+          </div>
+          <!-- GitHub -->
+          <div class="swiper-slide flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg w-28">
+            <img src="assets/images/github.png" alt="GitHub" class="w-12 h-12 grayscale">
+            <p class="mt-2 text-gray-300 text-sm">GitHub</p>
+          </div>
+        </div>
+        <!-- Flechas -->
+        <div class="swiper-button-next text-white"></div>
+        <div class="swiper-button-prev text-white"></div>
       </div>
+    </div>
 
-      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg">
-        <img src="assets/images/css.svg" alt="CSS" class="w-12 h-12 grayscale">
-        <p class="mt-2 text-gray-300 text-center text-sm">CSS</p>
-      </div>
-
-      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg">
-        <img src="assets/images/JavaScript-logo.png" alt="JavaScript" class="w-12 h-12 grayscale">
-        <p class="mt-2 text-gray-300 text-center text-sm">JavaScript</p>
-      </div>
-
-      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg">
-        <img src="assets/images/vue.png" alt="Vue" class="w-12 h-12 grayscale">
-        <p class="mt-2 text-gray-300 text-center text-sm">Vue</p>
-      </div>
-
-      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg">
-        <img src="assets/images/react.png" alt="React" class="w-12 h-12 grayscale">
-        <p class="mt-2 text-gray-300 text-center text-sm">React</p>
-      </div>
-
-      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg">
-        <img src="assets/images/tailwind-css.png" alt="Tailwind CSS" class="w-12 h-12 grayscale">
-        <p class="mt-2 text-gray-300 text-center text-sm">Tailwind CSS</p>
-      </div>
-
-      <!-- DISEÑO / FRONTEND -->
-      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg">
-        <img src="assets/images/Bootstrap_logo.png" alt="Bootstrap" class="w-12 h-12 grayscale">
-        <p class="mt-2 text-gray-300 text-center text-sm">Bootstrap</p>
-      </div>
-
-      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg">
-        <img src="assets/images/Adobe_Photoshop.png" alt="Photoshop" class="w-12 h-12 grayscale">
-        <p class="mt-2 text-gray-300 text-center text-sm">Photoshop</p>
-      </div>
-
-      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg">
-        <img src="assets/images/ilustrator.png" alt="Illustrator" class="w-12 h-12 grayscale">
-        <p class="mt-2 text-gray-300 text-center text-sm">Illustrator</p>
-      </div>
-
-      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg">
-        <img src="assets/images/wordpress.png" alt="WordPress" class="w-12 h-12 grayscale">
-        <p class="mt-2 text-gray-300 text-center text-sm">WordPress</p>
-      </div>
-
-      <!-- BACKEND -->
-      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg">
-        <img src="assets/images/node.webp" alt="Node.js" class="w-12 h-12 grayscale">
-        <p class="mt-2 text-gray-300 text-center text-sm">Node.js</p>
-      </div>
-
-      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg">
-        <img src="assets/images/PHP-logo.png" alt="PHP" class="w-12 h-12 grayscale">
-        <p class="mt-2 text-gray-300 text-center text-sm">PHP</p>
-      </div>
-
-      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg">
-        <img src="assets/images/firebase.png" alt="Firebase" class="w-12 h-12 grayscale">
-        <p class="mt-2 text-gray-300 text-center text-sm">Firebase</p>
-      </div>
-
-      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg">
-        <img src="assets/images/mongBD.png" alt="MongoDB" class="w-12 h-12 grayscale">
-        <p class="mt-2 text-gray-300 text-center text-sm">MongoDB</p>
-      </div>
-
-      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg">
-        <img src="assets/images/APIRES.png" alt="API REST" class="w-12 h-12 grayscale">
-        <p class="mt-2 text-gray-300 text-center text-sm">API REST</p>
-      </div>
-
-      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg">
-        <img src="assets/images/github.png" alt="GitHub" class="w-12 h-12 grayscale">
-        <p class="mt-2 text-gray-300 text-center text-sm">GitHub</p>
-      </div>
-
+    <!-- PC/Tablet (Grilla) -->
+    <div class="hidden sm:grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
+      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg"><img src="assets/images/html.png" class="w-12 h-12 grayscale"><p class="mt-2 text-gray-300 text-sm">HTML</p></div>
+      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg"><img src="assets/images/css.svg" class="w-12 h-12 grayscale"><p class="mt-2 text-gray-300 text-sm">CSS</p></div>
+      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg"><img src="assets/images/JavaScript-logo.png" class="w-12 h-12 grayscale"><p class="mt-2 text-gray-300 text-sm">JavaScript</p></div>
+      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg"><img src="assets/images/vue.png" class="w-12 h-12 grayscale"><p class="mt-2 text-gray-300 text-sm">Vue.js</p></div>
+      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg"><img src="assets/images/react.png" class="w-12 h-12 grayscale"><p class="mt-2 text-gray-300 text-sm">React</p></div>
+      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg"><img src="assets/images/tailwind-css.png" class="w-12 h-12 grayscale"><p class="mt-2 text-gray-300 text-sm">Tailwind</p></div>
+      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg"><img src="assets/images/Bootstrap_logo.png" class="w-12 h-12 grayscale"><p class="mt-2 text-gray-300 text-sm">Bootstrap</p></div>
+      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg"><img src="assets/images/Adobe_Photoshop.png" class="w-12 h-12 grayscale"><p class="mt-2 text-gray-300 text-sm">Photoshop</p></div>
+      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg"><img src="assets/images/ilustrator.png" class="w-12 h-12 grayscale"><p class="mt-2 text-gray-300 text-sm">Illustrator</p></div>
+      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg"><img src="assets/images/wordpress.png" class="w-12 h-12 grayscale"><p class="mt-2 text-gray-300 text-sm">WordPress</p></div>
+      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg"><img src="assets/images/node.webp" class="w-12 h-12 grayscale"><p class="mt-2 text-gray-300 text-sm">Node.js</p></div>
+      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg"><img src="assets/images/PHP-logo.png" class="w-12 h-12 grayscale"><p class="mt-2 text-gray-300 text-sm">PHP</p></div>
+      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg"><img src="assets/images/firebase.png" class="w-12 h-12 grayscale"><p class="mt-2 text-gray-300 text-sm">Firebase</p></div>
+      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg"><img src="assets/images/mongBD.png" class="w-12 h-12 grayscale"><p class="mt-2 text-gray-300 text-sm">MongoDB</p></div>
+      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg"><img src="assets/images/APIRES.png" class="w-12 h-12 grayscale"><p class="mt-2 text-gray-300 text-sm">API REST</p></div>
+      <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-lg"><img src="assets/images/github.png" class="w-12 h-12 grayscale"><p class="mt-2 text-gray-300 text-sm">GitHub</p></div>
     </div>
   </div>
 </section>
@@ -353,7 +363,7 @@
           <li>✔ Hosting Personal Gratis - 1 Año</li>
           <li>✔ 1 Cuenta de Correo Incluida</li>
         </ul>
-        <p class="text-lg font-semibold text-white mb-4">Desde $125.000 <span class="text-gray-400">+ IVA</span></p>
+        <p class="text-lg font-semibold text-white mb-4">Desde $120.000</p>
         <a href="https://wa.me/541166008018?text=Hola%20quiero%20este%20pack:%20Diseño%20Básico" 
            target="_blank"
            class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
@@ -386,7 +396,7 @@
           <li>✔ Hosting Profesional - 1 Año</li>
           <li>✔ 5 Cuentas de Correo Incluidas</li>
         </ul>
-        <p class="text-lg font-semibold text-white mb-4">Desde $200.000 <span class="text-gray-400">+ IVA</span></p>
+        <p class="text-lg font-semibold text-white mb-4">Desde $200.000</p>
         <a href="https://wa.me/541166008018?text=Hola%20quiero%20este%20pack:%20Diseño%20Intermedio" 
            target="_blank"
            class="inline-flex items-center bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition">
@@ -417,7 +427,7 @@
           <li>✔ 10 Cuentas de Correo Incluidas</li>
         </ul>
 
-        <p class="text-lg font-semibold text-white mb-4">Desde $350.000 <span class="text-gray-400">+ IVA</span></p>
+        <p class="text-lg font-semibold text-white mb-4">Desde $350.000 </p>
         <a href="https://wa.me/541166008018?text=Hola%20quiero%20este%20pack:%20E-commerce" 
            target="_blank"
            class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
@@ -453,7 +463,6 @@
     </div>
   </div>
 </section>
-
 
       <!-- Education Section -->
 <section id="education" class="py-20 bg-gray-900">
@@ -491,7 +500,6 @@
     </div>
   </div>
 </section>
-
 
 <!-- Projects Section -->
 <section id="projects" class="py-20 bg-gray-800">
@@ -561,7 +569,29 @@
             </div>
           </div>
         </div>
-  
+
+        <!-- Proyecto TECNO M&P -->
+        <div class="bg-gray-900 shadow-lg rounded-lg overflow-hidden">
+          <img src="assets/images/captura-tecno.png" alt="TECNO M&P" class="w-full">
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-blue-400">TECNO M&P</h3>
+            <p class="mt-2 text-gray-300">
+              TECNO M&P es una página web sobre productos electrónicos, tecnológicos, accesorios y más. Ofrece una experiencia intuitiva y moderna para explorar y adquirir los mejores gadgets del mercado, con un diseño atractivo y responsivo para todos los dispositivos.
+            </p>
+            <div class="mt-4 flex gap-4">
+              <a href="https://tecno-mp.vercel.app/" target="_blank" class="flex items-center justify-center text-white bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded-lg">
+                <img src="assets/images/ojo.png" alt="Demo" class="w-5 h-5 mr-2">
+                Demo
+              </a>
+              <a href="https://github.com/mtias2023/TECNO-M-P" target="_blank" class="flex items-center justify-center text-white bg-gray-700 hover:bg-gray-800 px-6 py-2 rounded-lg">
+                <img src="assets/images/github.png" alt="Repo" class="w-5 h-5 mr-2">
+                Repo
+              </a>
+            </div>
+          </div>
+        </div>
+
+          
         <!-- Proyecto 4 -->
         <div class="bg-gray-900 shadow-lg rounded-lg overflow-hidden">
           <img src="assets/images/proyecto-delicias_express.png" alt="Proyecto 3" class="w-full">
@@ -586,8 +616,7 @@
       </div>
     </div>
   </section>
-  
-  
+
   <section id="contact" class="py-20 bg-gray-900">
     <div class="container mx-auto px-6">
         <h2 id="contactos" class="text-3xl font-bold text-center text-white">CONTACTOS</h2>
@@ -613,6 +642,36 @@
         </div>
     </div>
 </section>
+
+<!-- Botones flotantes -->
+<div class="fixed right-6 bottom-6 flex flex-col gap-4 z-50">
+
+  <!-- Botón subir al inicio -->
+  <button 
+    onclick="window.scrollTo({top: 0, behavior: 'smooth'})" 
+    class="bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg transition transform hover:scale-110"
+    title="Ir al inicio"
+  >
+    <!-- Icono de flecha hacia arriba -->
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"></path>
+    </svg>
+  </button>
+
+  <!-- Botón WhatsApp -->
+  <a 
+    href="https://wa.me/541166008018?text=Hola%20quiero%20más%20información%20sobre%20tus%20servicios%20de%20desarrollador%20web" 
+    target="_blank" 
+    class="bg-green-500 hover:bg-green-600 text-white p-3 rounded-full shadow-lg transition transform hover:scale-110"
+    title="Enviar WhatsApp"
+  >
+    <!-- Icono WhatsApp -->
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M20.52 3.48a11.94 11.94 0 00-17 0 11.94 11.94 0 00-2.65 13.26L1 23l6.3-1.7a11.94 11.94 0 0013.22-2.66 11.94 11.94 0 000-17zM12 21.5c-1.85 0-3.65-.5-5.2-1.45l-.37-.22-3.74 1.02 1-3.66-.24-.38A9.44 9.44 0 012.5 12C2.5 6.2 7.2 1.5 12 1.5S21.5 6.2 21.5 12 16.8 21.5 12 21.5zm5.15-7.65c-.26-.13-1.53-.76-1.77-.85-.24-.09-.42-.13-.6.13-.18.26-.7.85-.86 1.03-.16.18-.32.2-.59.07-.26-.13-1.1-.4-2.09-1.28-.77-.69-1.28-1.54-1.43-1.8-.15-.26-.02-.4.12-.53.12-.12.26-.32.39-.48.13-.16.17-.27.26-.45.09-.18.05-.34-.02-.47-.07-.13-.6-1.44-.82-1.98-.22-.52-.44-.45-.6-.46-.15-.01-.33-.01-.51-.01s-.47.07-.71.34c-.24.26-.92.9-.92 2.2 0 1.3.94 2.56 1.07 2.73.13.17 1.85 2.82 4.48 3.86.63.27 1.12.43 1.5.55.63.2 1.2.17 1.65.1.5-.08 1.53-.62 1.75-1.22.22-.61.22-1.13.15-1.24-.07-.11-.25-.18-.51-.31z"/>
+    </svg>
+  </a>
+
+</div>
 
 
     <!-- Footer -->
@@ -659,6 +718,7 @@
             </a>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="js/scripts.js"></script>
 </footer>
