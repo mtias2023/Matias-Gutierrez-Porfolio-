@@ -1,0 +1,138 @@
+/* styles.css */
+body {
+    font-family: 'Inter', sans-serif; 
+}
+.foto {
+    width: 500px;
+    height: 600px;
+    margin: 200px;
+    object-fit: cover; /* Asegura que la imagen se ajuste bien sin deformarse */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Agrega una sombra sutil alrededor */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave al hacer hover */
+}
+
+.foto:hover {
+    transform: scale(1.05); /* Aumenta el tamaño ligeramente al pasar el ratón */
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3); /* Aumenta la sombra en el hover */
+}
+
+.active {
+    color: #60a5fa; /* Color azul claro */
+    border-bottom: 2px solid #60a5fa; /* Subrayado */
+}
+.name-3d {
+  color: #3b82f6; /* Tailwind blue-500 */
+  text-shadow:
+    1px 1px 0 #1e40af,
+    2px 2px 0 #1e3a8a,
+    3px 3px 0 #1e3a8a;
+  transition: transform 0.3s;
+}
+
+.name-3d:hover {
+  transform: translateY(-3px) scale(1.05);
+}
+
+
+/* Animaciones personalizadas */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Estilos generales para la hero section 
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 2rem;
+    background: linear-gradient(to right, #1e3a8a, #000000);
+    color: white;
+
+}
+
+.text-container {
+    flex: 1;
+    padding-left: 4rem;
+    text-align: left;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+p {
+   
+    font-size: 1.125rem;
+    color: #e5e7eb;
+}
+
+.contact-button {
+    margin-top: 1.5rem;
+    display: inline-block;
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #2563eb;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    max-width: 20rem; 
+}
+
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+      
+    }
+
+    .image-container {
+        order: 1;
+    }
+
+    .text-container {
+        order: 2;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .hero-image {
+        max-width: 15rem; 
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}*/
